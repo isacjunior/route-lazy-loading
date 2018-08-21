@@ -4,7 +4,7 @@
   "description": "Example Lazy Loading with React",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --hot --open"
   },
   "author": "Isac",
   "license": "MIT",

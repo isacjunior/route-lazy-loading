@@ -15,7 +15,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: '[name].[hash].js',
     publicPath: '/',
   },
 
@@ -29,19 +29,6 @@ module.exports = {
         },
       },
     ],
-  },
-
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /node_modules/,
-          name: 'vendor',
-          chunks: 'initial',
-          enforce: true,
-        },
-      },
-    },
   },
 
   plugins: [
