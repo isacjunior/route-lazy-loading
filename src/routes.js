@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import BrowserRouter from 'react-router-dom/BrowserRouter'
 import Route from 'react-router-dom/Route'
 import Switch from 'react-router-dom/Switch'
@@ -18,13 +18,13 @@ const Other = LazyImport({
 
 const Routes = () => (
   <BrowserRouter>
-    <Fragment>
+    <>
       <Nav />
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/other" component={Other} />
       </Switch>
-    </Fragment>
+    </>
   </BrowserRouter>
 )
 
